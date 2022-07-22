@@ -1,6 +1,5 @@
 {
   "src/**/*.(ts|tsx)": [
-    "yarn lint --fix",
-    "yarn typecheck"
+    "yarn lint --fix"
   ]
 }

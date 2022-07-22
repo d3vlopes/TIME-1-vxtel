@@ -1,10 +1,49 @@
 :root {
-  --primary-color: #f231a5;
-  --secondary-color: #3cd3c1;
-  --text-light: #fff;
-  --background: #121214;
+  --primary-color: #3e63ac;
+  --secondary-color: #21bf60;
+
+  --black: #1b2129;
+
+  --neutral-100: #e0e5eb;
+  --neutral-200: #d5dce5;
+  --neutral-300: #ccd2db;
+  --neutral-400: #aebbcd;
+  --neutral-500: #929fb1;
+  --neutral-600: #6d7989;
+  --neutral-700: #404b5a;
+  --neutral-800: #202833;
+
+  --white: #f8f9fa;
+
+  --text-light: #f8f9fa;
+  --text-dark: #1b2129;
+
+  --background-primary: #fefefe;
+
+  --background-secondary-light: #f9f7f7;
+  --background-secondary-dark: #1b2129;
+
   --font-main: 'Roboto';
   --font-heading: 'Poppins';
+
+  --font-size-small: 1.4rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-xlarge: 2.2rem;
+  --font-size-xxlarge: 2.4rem;
+  --font-size-xxxlarge: 2.8rem;
+  --font-size-huge: 4.8rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --spacing-small: 0.8rem;
+  --spacing-medium: 1.6rem;
+  --spacing-large: 2.4rem;
+  --spacing-xlarge: 3.2rem;
+  --spacing-xxlarge: 4rem;
+  --spacing-huge: 12rem;
 }
 
 * {
@@ -15,24 +54,27 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--text-light);
-  background: var(--background);
-  font: 400 1.6rem var(--font-main), sans-serif;
+  background: var(--background-primary);
+  color: var(--text-dark);
+  font-family: var(--font-main);
+  font-size: var(--font-size-medium);
 }
 
-body,
 input,
 textarea,
 select,
 button {
-  font: 500 1.6rem var(--font-main), sans-serif;
+  font-family: var(--font-main);
+  font-size: var(--font-size-medium);
 }
 
 button {
   cursor: pointer;
+  font-weight: var(font-weight-bold);
 }
 
 a {

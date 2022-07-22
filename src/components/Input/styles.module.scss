@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+
+  label {
+    color: var(--neutral-600);
+    font-size: var(--font-size-large);
+    margin-bottom: var(--spacing-small);
+    line-height: var(--font-size-xxlarge);
+  }
+  
+  input {
+    background-color: var(--background-primary);
+    width: 100%;
+    color: var(--neutral-700);
+    border-radius: 0.4rem;
+    padding: var(--spacing-medium) var(--spacing-large);
+    border: none;
+    line-height: var(--font-size-xlarge);
+  }
+  
+  input::placeholder {
+    color: var(--neutral-300);
+  }
+
+  input:focus {
+    outline: solid var(--neutral-300) 1px;
+  }
+}
