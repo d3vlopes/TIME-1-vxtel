@@ -6,22 +6,16 @@ export interface TableProps {
 
 export const Table = ({ dataBody }: TableProps) => {
   return (
-    <div className={styles.container}>
-      <table>
+    <>
+      <table className={styles.container}>
         <thead>
           <tr>
             <th>Origem</th>
             <th>Destino</th>
             <th>Tempo</th>
             <th>Plano FaleMais</th>
-            <th>
-              Com <br />
-              FaleMais
-            </th>
-            <th>
-              Sem <br />
-              FaleMais
-            </th>
+            <th>Com FaleMais</th>
+            <th>Sem FaleMais</th>
           </tr>
         </thead>
         <tbody>
@@ -32,6 +26,6 @@ export const Table = ({ dataBody }: TableProps) => {
           </tr>
         </tbody>
       </table>
-    </div>
+    </>
   )
 }
