@@ -8,6 +8,7 @@
 }
 
 .sectionContainer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +17,7 @@
 
 .sectionCalculatePlan {
   background: var(--background-secondary-light);
-
+  width: 100%
   h2 {
     margin-bottom: var(--spacing-large);
   }
@@ -53,6 +54,7 @@
 
 .table {
   gap: var(--spacing-large);
+  width: 100%;
 }
 
 .buttonsTableGroup {

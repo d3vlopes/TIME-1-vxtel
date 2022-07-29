@@ -28,4 +28,49 @@ table {
   }
 }
 
+@media (max-width: 768px) {
+  table {
+    border: 0.2rem solid var(--black);
+    justify-content: center;
+    display: flex;
+    width: 90%;
+    thead {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      float: left;
+      tr {
+        display: flex;
+        flex-direction: column;
+        th {
+          border: none;
+          border-bottom: 0.2rem solid var(--black);
+        }
+        th:nth-last-child(1) {
+          border: none;
+        }
+      }
+    }
+    tbody {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      float: left;
+      tr {
+        display: flex;
+        flex-direction: column;
+        td {
+          border: none;
+          border-bottom: 0.2rem solid var(--black);
+        }
+        td:nth-last-child(1) {
+          border: none;
+        }
+      }
+    }
+  }
+}
 
